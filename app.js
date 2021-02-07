@@ -57,8 +57,8 @@ const foodRecipe = (recipe) => {
 	recipeDiv.innerHTML = `
         <img src="${recipe.strMealThumb}" class = "img-fluid pt-1">
         <h4 class = "fs-2 py-2">${recipe.strMeal}</h4>
-        <p class = "fs-5 fw-bold">--Ingredients</p>
-        <ul class="list-group p-2">            
+        <p class = "fs-5 fw-bold">Ingredients</p>
+        <ul class="list-group p-2">         
             <li class="list-group-item">${recipe.strIngredient1}</li>
             <li class="list-group-item">${recipe.strIngredient2}</li>
             <li class="list-group-item">${recipe.strIngredient3}</li>
