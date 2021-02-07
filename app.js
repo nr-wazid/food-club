@@ -11,7 +11,9 @@ const searchFood = () => {
 	foodsContainer.innerHTML = null;
 };
 
+//Display Matched Food
 const showFood = (foods) => {
+	//Search Food Found
 	if (foods != null) {
 		foods.forEach((food) => {
 			const foodDiv = document.createElement("div");
@@ -31,6 +33,7 @@ const showFood = (foods) => {
 		showError();
 	}
 };
+//Error Display
 const showError = () => {
 	const foodDiv = document.createElement("div");
 	const foundZero = `
@@ -49,13 +52,13 @@ const foodDetails = (foodName) => {
 		.then((data) => foodRecipe(data.meals[0]));
 };
 
+//Food Ingredients Display
 const foodRecipe = (recipe) => {
 	recipeDiv.innerHTML = `
         <img src="${recipe.strMealThumb}" class = "img-fluid pt-1">
-        <h4 class = "fs-2 py-1">${recipe.strMeal}</h4>
-        <p class = "fs-5 fw-bold">Ingredients</p>
-
-        <ul class="list-group p-2">
+        <h4 class = "fs-2 py-2">${recipe.strMeal}</h4>
+        <p class = "fs-5 fw-bold">--Ingredients</p>
+        <ul class="list-group p-2">            
             <li class="list-group-item">${recipe.strIngredient1}</li>
             <li class="list-group-item">${recipe.strIngredient2}</li>
             <li class="list-group-item">${recipe.strIngredient3}</li>
