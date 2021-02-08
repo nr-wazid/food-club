@@ -65,6 +65,10 @@ const foodRecipe = (recipe) => {
             <li class="list-group-item">${recipe.strIngredient4}</li>
             <li class="list-group-item">${recipe.strIngredient5}</li>
             <li class="list-group-item">${recipe.strIngredient6}</li>
+            <li class="list-group-item">${recipe.strIngredient7}</li>
+            <li class="list-group-item">${recipe.strIngredient8}</li>
+            <li class="list-group-item">${recipe.strIngredient9}</li>
+            <li class="list-group-item">${recipe.strIngredient10}</li>
         </ul>
     `;
 };
